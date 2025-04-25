@@ -24,7 +24,7 @@ h1{
     justify-content: flex-start;
 }
 
-.Power{
+.Powers{
     background: #FFECB3;
     width: 15%;
     height: 260px;
@@ -44,7 +44,7 @@ h1{
     box-shadow: 0px 0px 4px	 4px #FFD54F;
 }
 
-.bombillo{
+.Power{
     position: relative;
     top: 5%;
     left: 10%;
@@ -65,7 +65,7 @@ h1{
     font-size: 100%;
 }
 
-.Power1{
+.Energies{
     background: #FFECB3;
     width: 15%;
     height: 260px;
@@ -80,7 +80,7 @@ h1{
     cursor: pointer;
 }
 
-.bombillo1{
+.Energy{
     position: relative;
     top: 5%;
     left: 10%;
@@ -88,7 +88,7 @@ h1{
     margin: 2%;
 }
 
-.btnPower1{
+.btnEnergy{
     height: 48px;
     width: 80%;
     border: none;
@@ -101,7 +101,7 @@ h1{
     font-size: 100%;
 }
 
-.Power2{
+.Calculators{
     background: #FFECB3;
     width: 15%;
     height: 260px;
@@ -116,7 +116,7 @@ h1{
     cursor: pointer;
 }
 
-.bombillo2{
+.Calculator{
     position: relative;
     top: 5%;
     left: 18%;
@@ -124,7 +124,7 @@ h1{
     margin: 2%;
 }
 
-.btnPower2{
+.btnCalculator{
     height: 48px;
     width: 80%;
     border: none;
@@ -137,7 +137,7 @@ h1{
     font-size: 100%;
 }
 
-.Power3{
+.Tips{
     background: #FFECB3;
     width: 15%;
     height: 260px;
@@ -152,7 +152,7 @@ h1{
     cursor: pointer;
 }
 
-.bombillo3{
+.Tip{
     position: relative;
     top: 5%;
     left: 10%;
@@ -160,7 +160,7 @@ h1{
     margin: 2%;
 }
 
-.btnPower3{
+.btnTip{
     height: 48px;
     width: 80%;
     border: none;
@@ -173,7 +173,7 @@ h1{
     font-size: 100%;
 }
 
-.Power4{
+.Relations{
     background: #FFECB3;
     width: 15%;
     height: 260px;
@@ -188,7 +188,7 @@ h1{
     cursor: pointer;
 }
 
-.bombillo4{
+.Relation{
     position: relative;
     top: 5%;
     left: 10%;
@@ -196,7 +196,7 @@ h1{
     margin: 2%;
 }
 
-.btnPower4{
+.btnRelation{
     height: 48px;
     width: 80%;
     border: none;

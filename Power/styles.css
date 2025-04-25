@@ -6,7 +6,101 @@ body{
 h1{
     color: #FFD54F;
     font-family: 'Jockey One', sans-serif;
+    font-size: 300%;
+    text-align: center;
+    text-shadow: 3px 3px 8px #FFD54F;
+    cursor: pointer;
+}
+
+.Definition{
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.T1{
+    color: #FFD54F;
+    font-family: 'Jockey One', sans-serif;
     font-size: 200%;
     text-align: center;
     text-shadow: 3px 3px 8px #FFD54F;
+}
+
+p{
+    color: white;
+    width: 50%;
+    position: relative;
+    left: 3%;
+    text-align: justify;
+    font-size: 120%;
+    font-family: 'Jockey One', sans-serif;
+}
+
+.formula{
+    text-align: center;
+    font-size: 150%;
+}
+
+ul{
+    color: white;
+    width: 50%;
+    position: relative;
+    left: 3%;
+    text-align: justify;
+    font-size: 120%;
+    font-family: 'Jockey One', sans-serif;
+}
+
+.Power{
+    position: relative;
+    top: -400px;
+    left: 56%;
+    height: 240px;
+    width: 40%;
+    margin: 0;
+    border: 5px solid #FFD54F;
+    border-radius: 20px;
+}
+
+.btnVideo{
+    position: relative;
+    top: -350px;
+    left: 30%;
+    height: 20px;
+    width: 10%;
+    border: none;
+    border-radius: 20px;
+    font-family: 'Jockey One', sans-serif;
+    font-size: 100%;
+    background-color: #FFD54F;
+    cursor: pointer;
+}
+
+.btnVideo:hover{
+    background-color: #ffc400;
+    transform: scale(1.2);
+}
+
+.Txt2{
+    position: relative;
+    top: -275px;
+}
+
+.T2{
+    color: #FFD54F;
+    font-family: 'Jockey One', sans-serif;
+    font-size: 200%;
+    text-align: center;
+    text-shadow: 3px 3px 8px #FFD54F;
+}
+
+.Concepto{
+    width: 90%;
+}
+
+.Watt{
+    position: relative;
+    top: -130px;
+    left: 80%;
+    width: 10%;
 }

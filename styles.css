@@ -39,7 +39,7 @@ h1{
     cursor: pointer;
 }
 
-.Power:hover, .Power1:hover, .Power2:hover, .Power3:hover, .Power4:hover{
+.Powers:hover, .Energies:hover, .Calculators:hover, .Tips:hover, .Relations:hover{
     transform: scale(1.2);
     box-shadow: 0px 0px 4px	 4px #FFD54F;
 }

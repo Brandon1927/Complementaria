@@ -1,0 +1,12 @@
+body{
+    background-color: black;
+    margin: 0;
+}
+
+h1{
+    color: #FFD54F;
+    font-family: 'Jockey One', sans-serif;
+    font-size: 200%;
+    text-align: center;
+    text-shadow: 3px 3px 8px #FFD54F;
+}

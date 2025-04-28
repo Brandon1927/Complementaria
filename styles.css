@@ -1,11 +1,23 @@
 body{
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.9);
+    background-image: url("./img/Redes.jpg");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 100% 100%;
+    background-size: cover;
     height: 100vh;
     margin: 0;
     overflow: hidden;
+}
+
+body::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: -1; 
 }
 
 h1{

@@ -11,7 +11,7 @@ body{
 
 body::before{
     content: '';
-    position: absolute;
+    position:fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -30,16 +30,18 @@ h1{
 
 .all{
     position: relative;
-    top: -5%;
-    display: flex;              /* Activa el modo flex */
-    gap: 50px;                  /* Espacio entre los elementos */
-    justify-content: flex-start;
+    top: -25%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);              /* Activa el modo flex */
+    gap: 20px;                  /* Espacio entre los elementos */
+    padding: 6%;
+    left: 1%;
 }
 
-.Powers{
+.Powers, .Energies, .Calculators, .Tips, .Relations{
     background: #FFECB3;
-    width: 15%;
-    height: 260px;
+    width: 65%;
+    height: 230px;
     position: relative;
     top: 25%;
     left: 5%;
@@ -56,87 +58,23 @@ h1{
     box-shadow: 0px 0px 4px	 4px #FFD54F;
 }
 
-.Power{
+.Power, .Energy, .Tip, .Relation{
     position: relative;
     top: 5%;
     left: 10%;
     width: 80%;
     margin: 2%;
-}
-
-.btnPower{
-    height: 48px;
-    width: 80%;
-    border: none;
-    border-radius: 20px;
-    position: relative;
-    top: 10%;
-    left: 10%;
-    background-color: #FFD54F;
-    font-family: 'Jockey One', sans-serif;
-    font-size: 100%;
-}
-
-.Energies{
-    background: #FFECB3;
-    width: 15%;
-    height: 260px;
-    position: relative;
-    top: 25%;
-    left: 5%;
-    border: none;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    box-shadow: 0px 0px 4px	 4px #FFD54F;
-    cursor: pointer;
-}
-
-.Energy{
-    position: relative;
-    top: 5%;
-    left: 10%;
-    width: 80%;
-    margin: 2%;
-}
-
-.btnEnergy{
-    height: 48px;
-    width: 80%;
-    border: none;
-    border-radius: 20px;
-    position: relative;
-    top: 10%;
-    left: 10%;
-    background-color: #FFD54F;
-    font-family: 'Jockey One', sans-serif;
-    font-size: 100%;
-}
-
-.Calculators{
-    background: #FFECB3;
-    width: 15%;
-    height: 260px;
-    position: relative;
-    top: 25%;
-    left: 5%;
-    border: none;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    box-shadow: 0px 0px 4px	 4px #FFD54F;
-    cursor: pointer;
 }
 
 .Calculator{
     position: relative;
     top: 5%;
-    left: 18%;
+    left: 17%;
     width: 62%;
     margin: 2%;
 }
 
-.btnCalculator{
+.btnPower, .btnEnergy, .btnCalculator, .btnTip, .btnRelation{
     height: 48px;
     width: 80%;
     border: none;
@@ -144,79 +82,131 @@ h1{
     position: relative;
     top: 10%;
     left: 10%;
-    background-color: #FFD54F;
     font-family: 'Jockey One', sans-serif;
+    text-align: center;
     font-size: 100%;
 }
 
-.Tips{
-    background: #FFECB3;
-    width: 15%;
-    height: 260px;
-    position: relative;
-    top: 25%;
-    left: 5%;
-    border: none;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    box-shadow: 0px 0px 4px	 4px #FFD54F;
-    cursor: pointer;
+@media (max-width: 1024px) and (min-width: 481px) {
+    body{
+        background-color: rgba(0, 0, 0, 0.9);
+        background-image: url("./img/Redes.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 100vh;
+        margin: 0;
+        overflow: auto;
+    }
+    
+    body::before{
+        content: '';
+        position:fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.7);
+        z-index: -1; 
+    }
+
+    h1{
+        color: #FFD54F;
+        font-family: 'Jockey One', sans-serif;
+        font-size: 600%;
+        text-align: center;
+        text-shadow: 3px 3px 8px #FFD54F;
+    }
+
+    .all{
+        position: relative;
+        top: -5%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 100px;                  
+        padding-left: 150px;
+        padding-bottom: 150px;
+        left: 1%;
+    }
+
+    .Powers, .Energies, .Calculators, .Tips, .Relations{
+        background: #FFECB3;
+        width: 55%;
+        height: 400px;
+        position: relative;
+        top: 25%;
+        left: 5%;
+        border: none;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0px 0px 4px	 4px #FFD54F;
+        cursor: pointer;
+    }
+
+    .Powers:hover, .Energies:hover, .Calculators:hover, .Tips:hover, .Relations:hover{
+        transform: scale(1.4);
+        box-shadow: 0px 0px 4px	 4px #FFD54F;
+    }
+
+    .btnPower, .btnEnergy, .btnCalculator, .btnTip, .btnRelation{
+        height: 48px;
+        width: 80%;
+        border: none;
+        border-radius: 20px;
+        position: relative;
+        top: 10%;
+        left: 10%;
+        font-family: 'Jockey One', sans-serif;
+        text-align: center;
+        font-size: 180%;
+    }
 }
 
-.Tip{
-    position: relative;
-    top: 5%;
-    left: 10%;
-    width: 80%;
-    margin: 2%;
-}
+@media (max-width: 480px) {
+    body{
+        background-color: rgba(0, 0, 0, 0.9);
+        background-image: url("./img/Redes.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        margin: 0;
+        min-height: 100vh;
+        overflow: auto;
+    }
+    
+    body::before{
+        content: '';
+        position:fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.7);
+        z-index: -1; 
+    }
 
-.btnTip{
-    height: 48px;
-    width: 80%;
-    border: none;
-    border-radius: 20px;
-    position: relative;
-    top: 10%;
-    left: 10%;
-    background-color: #FFD54F;
-    font-family: 'Jockey One', sans-serif;
-    font-size: 100%;
-}
+    h1{
+        color: #FFD54F;
+        font-family: 'Jockey One', sans-serif;
+        font-size: 300%;
+        text-align: center;
+        text-shadow: 3px 3px 8px #FFD54F;
+    }
 
-.Relations{
-    background: #FFECB3;
-    width: 15%;
-    height: 260px;
-    position: relative;
-    top: 25%;
-    left: 5%;
-    border: none;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    box-shadow: 0px 0px 4px	 4px #FFD54F;
-    cursor: pointer;
-}
+    .all{
+        position: relative;
+        top: -5%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px;                  
+        padding: 6%;
+        padding-bottom: 100px;
+        left: 5%;
+    }
 
-.Relation{
-    position: relative;
-    top: 5%;
-    left: 10%;
-    width: 80%;
-    margin: 2%;
-}
-
-.btnRelation{
-    height: 48px;
-    width: 80%;
-    border: none;
-    border-radius: 20px;
-    position: relative;
-    top: 10%;
-    left: 10%;
-    background-color: #FFD54F;
-    font-family: 'Jockey One', sans-serif;
-    font-size: 100%;
+    .Powers:hover, .Energies:hover, .Calculators:hover, .Tips:hover, .Relations:hover{
+        transform: scale(1.2);
+        box-shadow: 0px 0px 4px	 4px #FFD54F;
+    }
 }

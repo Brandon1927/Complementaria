@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoPower</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jockey+One&display=swap">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' 
+    viewBox='0 0 100 100'%3E%3Ctext x='50%' y='50%' font-size='60' text-anchor='middle' 
+    dy='.35em'%3E⚡%3C/text%3E%3C/svg%3E" type="image/svg+xml">
+</head>
+<body>
+    <!-- aa -->
+    <header>
+        <h1>⚡️EcoPower⚡️</h1>
+        <div class="all">
+            <a href="../Power/index.html">
+                <div class="Powers">
+                    <img class="Power1" src="../img/Bombillo.png" alt="png">
+                    <h3 class="btnPower" >¿Qué es potencia electrica?</h3>
+                </div>
+            </a>
+            <div class="Energies" onclick="window.location.href='./Energy/index.html'">
+                <img class="Energy" src="../img/Energia.png" alt="png">
+                <h3 class="btnEnergy">¿Qué es energia electrica?</h3>
+            </div>
+            <div class="Calculators">
+                <img class="Calculator" src="../img/Calculadora.png" alt="png">
+                <h3 class="btnCalculator">¿Quieres calcular tu consumo?</h3>
+            </div>
+            <div class="Tips">
+                <img class="Tip" src="../img/Consejos.png" alt="png">
+                <h3 class="btnTip">¿Quieres algunos consejos?</h3>
+            </div>
+            <div class="Relations">
+                <img class="Relation" src="../img/Relacion.png" alt="png">
+                <h3 class="btnRelation">¿Quieres saber la diferencia entre ambas?</h3>
+            </div>
+        </div>
+    </header>
+    <!-- aa -->
+    <h4 class="T1" id="T1">¿Cúanto consumo?</h4>
+    <p>
+        ¿Quieres saber cuánto energía consumes en tu hogar y 
+        cómo puedes ahorrar en tu factura de electricidad? 
+        Para hacerlo, necesitamos algunos datos sobre tus aparatos 
+        eléctricos y su uso diario. Completa los siguientes campos 
+        con la información correspondiente y te ayudaré a estimar 
+        tu consumo energético.
+    </p>
+    <!-- aa -->
+    <div class="Txt1">
+        <div class="Txt11">
+            <p>
+                Cuando se trata de calcular el consumo eléctrico de los aparatos en tu hogar, 
+                lo ideal es contar con el valor específico de cada uno. Si dispones de esa 
+                información, puedes ingresarla para obtener un cálculo más preciso. Sin embargo, 
+                si no tienes los datos exactos, no te preocupes: también podemos estimar un 
+                consumo general para cada aparato, basándonos en valores promedio comunes. Esto 
+                te permitirá tener una idea aproximada del uso de energía en tu hogar y ayudarte 
+                a gestionar mejor tu consumo eléctrico.
+            </p>
+        </div>
+        <div class="Txt12">
+            <img class="img1" src="../img/saveEnergy.jpg" alt="jpg">
+        </div>
+    </div>
+    <!-- aa -->
+    <h4 class="T3" id="T2">Aparatos eléctricos</h4>
+    <div class="Txt2">
+        <div class="Txt21">
+            <img class="img2" src="../img/aparatos.jpg" alt="png">
+        </div>
+        <div>
+            <p>Consumo promedio común:</p>
+            <ol class="Concepto">
+                <li>Nevera: 150 W</li>
+                <li>Televisor: 100 W</li>
+                <li>Cafetera: 1000 W</li>
+                <li>Microondas: 900 W</li>
+                <li>Lavadora: 1500 W</li>
+                <li>Ventilador: 75 W</li>
+                <li>Licuadora: 500 W</li>
+                <li>Cargadores (portatil, celular): 10 W</li>
+                <li>Portatil: 300 W</li>
+                <li>Plancha: 1800 W</li>
+                <li>Bombillo: 6 W</li>
+            </ol>
+        </div>
+    </div>
+    <!-- aa -->
+    <h4 class="T2" id="T3">Calculemos tu consumo</h4>
+    <h4>
+    <label class="f0">
+        Recomendación: 
+        si no sabes el consumo de tu aparato eléctrico pon el valor consumo promedio común.
+    </label>
+    </h4>
+    <h4>
+        <label class="C0" for="consumos">Elige el consumo a calcular:</label>
+        <select id="consumos" name="consumos">
+            <option value="1">Diario</option>
+            <option value="7">Semanal</option>
+            <option value="30">Mensual</option>
+            <option value="365">Anual</option>
+        </select>
+    </h4>
+    <h4>
+    <label class="C0" for="precio">Elige el estrato socioeconómico del lugar de tu residencia:</label>
+    <select id="precio" name="precio">
+        <option value="476">2</option>
+        <option value="737.6">3</option>
+        <option value="867.8">4</option>
+        <option value="1041">5</option>
+        <option value="1041">6</option>
+    </select>
+    </h4>
+    <!-- aa -->
+    <h4 class="appliances">Nevera</h4>
+    <div class="electrical">
+        <label class="C1">Cantidad:</label>
+        <input type="number" placeholder="Ingresa la cantidad" id="nevCantidad" min="0">
+        <label class="C1">Consumo:</label>
+        <input type="number" placeholder="Ingresa el consumo" id="nevConsumo" min="0">
+        <label class="C1">Tiempo de uso:</label>
+        <input type="number" placeholder="Ingresa el tiempo de uso" id="nevTime" min="0">
+        <button type="button" id="btnNev"> calcular</button>
+    </div>
+    <div class="electrical">
+        <label class="C1">Total:</label>
+        <input type="text" id="totalNev" disabled>
+        <label class="C1">Total a pagar:</label>
+        <input type="text" id="totalNevPag" disabled>
+    </div>
+    <!-- aa -->
+    <h4 class="appliances">Televisor</h4>
+    <div class="electrical">
+        <label class="C1">Cantidad:</label>
+        <input type="number" placeholder="Ingresa la cantidad" id="tvCantidad" min="0">
+        <label class="C1">Consumo:</label>
+        <input type="number" placeholder="Ingresa el consumo" id="tvConsumo" min="0">
+        <label class="C1">Tiempo de uso:</label>
+        <input type="number" placeholder="Ingresa el tiempo de uso" id="tvTime" min="0">
+        <button type="button" id="btnTv"> calcular</button>
+    </div>
+    <div class="electrical">
+        <label class="C1">Total:</label>
+        <input type="text" id="totalTv" disabled>
+        <label class="C1">Total a pagar:</label>
+        <input type="text" id="totalTvPag" disabled>
+    </div>
+    <!-- aa -->
+    <h4 class="appliances">Cafetera</h4>
+    <div class="electrical">
+        <label class="C1">Cantidad:</label>
+        <input type="number" placeholder="Ingresa la cantidad" id="cafCantidad" min="0">
+        <label class="C1">Consumo:</label>
+        <input type="number" placeholder="Ingresa el consumo" id="cafConsumo" min="0">
+        <label class="C1">Tiempo de uso:</label>
+        <input type="number" placeholder="Ingresa el tiempo de uso" id="cafTime" min="0">
+        <button type="button" id="btnCaf"> calcular</button>
+    </div>
+    <div class="electrical">
+        <label class="C1">Total:</label>
+        <input type="text" id="totalCaf" disabled>
+        <label class="C1">Total a pagar:</label>
+        <input type="text" id="totalCafPag" disabled>
+    </div>
+    <!-- aa -->
+    <h4 class="appliances">Microondas</h4>
+    <div class="electrical">
+        <label class="C1">Cantidad:</label>
+        <input type="number" placeholder="Ingresa la cantidad" id="micCantidad" min="0">
+        <label class="C1">Consumo:</label>
+        <input type="number" placeholder="Ingresa el consumo" id="micConsumo" min="0">
+        <label class="C1">Tiempo de uso:</label>
+        <input type="number" placeholder="Ingresa el tiempo de uso" id="micTime" min="0">
+        <button type="button" id="btnMic"> calcular</button>
+    </div>
+    <div class="electrical">
+        <label class="C1">Total:</label>
+        <input type="text" id="totalMic" disabled>
+        <label class="C1">Total a pagar:</label>
+        <input type="text" id="totalMicPag" disabled>
+    </div>
+    <!-- aa -->
+    <h4 class="appliances">Lavadora</h4>
+    <div class="electrical">
+        <label class="C1">Cantidad:</label>
+        <input type="number" placeholder="Ingresa la cantidad" id="lavCantidad" min="0">
+        <label class="C1">Consumo:</label>
+        <input type="number" placeholder="Ingresa el consumo" id="lavConsumo" min="0">
+        <label class="C1">Tiempo de uso:</label>
+        <input type="number" placeholder="Ingresa el tiempo de uso" id="lavTime" min="0">
+        <button type="button" id="btnLav"> calcular</button>
+    </div>
+    <div class="electrical">
+        <label class="C1">Total:</label>
+        <input type="text" id="totalLav" disabled>
+        <label class="C1">Total a pagar:</label>
+        <input type="text" id="totalLavPag" disabled>
+    </div>
+    <!-- aa -->
+    <h4 class="appliances">Ventilador</h4>
+    <div class="electrical">
+        <label class="C1">Cantidad:</label>
+        <input type="number" placeholder="Ingresa la cantidad" id="venCantidad" min="0">
+        <label class="C1">Consumo:</label>
+        <input type="number" placeholder="Ingresa el consumo" id="venConsumo" min="0">
+        <label class="C1">Tiempo de uso:</label>
+        <input type="number" placeholder="Ingresa el tiempo de uso" id="venTime" min="0">
+        <button type="button" id="btnVen"> calcular</button>
+    </div>
+    <div class="electrical">
+        <label class="C1">Total:</label>
+        <input type="text" id="totalVen" disabled>
+        <label class="C1">Total a pagar:</label>
+        <input type="text" id="totalVenPag" disabled>
+    </div>
+    <!-- aa -->
+    <h4 class="appliances">Licuadora</h4>
+    <div class="electrical">
+        <label class="C1">Cantidad:</label>
+        <input type="number" placeholder="Ingresa la cantidad" id="licCantidad" min="0">
+        <label class="C1">Consumo:</label>
+        <input type="number" placeholder="Ingresa el consumo" id="licConsumo" min="0">
+        <label class="C1">Tiempo de uso:</label>
+        <input type="number" placeholder="Ingresa el tiempo de uso" id="licTime" min="0">
+        <button type="button" id="btnLic"> calcular</button>
+    </div>
+    <div class="electrical">
+        <label class="C1">Total:</label>
+        <input type="text" id="totalLic" disabled>
+        <label class="C1">Total a pagar:</label>
+        <input type="text" id="totalLicPag" disabled>
+    </div>
+    <!-- aa -->
+    <h4 class="appliances">Cargadores (portatil, celular)</h4>
+    <div class="electrical">
+        <label class="C1">Cantidad:</label>
+        <input type="number" placeholder="Ingresa la cantidad" id="carCantidad" min="0">
+        <label class="C1">Consumo:</label>
+        <input type="number" placeholder="Ingresa el consumo" id="carConsumo" min="0">
+        <label class="C1">Tiempo de uso:</label>
+        <input type="number" placeholder="Ingresa el tiempo de uso" id="carTime" min="0">
+        <button type="button" id="btnCar"> calcular</button>
+    </div>
+    <div class="electrical">
+        <label class="C1">Total:</label>
+        <input type="text" id="totalCar" disabled>
+        <label class="C1">Total a pagar:</label>
+        <input type="text" id="totalCarPag" disabled>
+    </div>
+    <!-- aa -->
+    <h4 class="appliances">Portatil</h4>
+    <div class="electrical">
+        <label class="C1">Cantidad:</label>
+        <input type="number" placeholder="Ingresa la cantidad" id="porCantidad" min="0">
+        <label class="C1">Consumo:</label>
+        <input type="number" placeholder="Ingresa el consumo" id="porConsumo" min="0">
+        <label class="C1">Tiempo de uso:</label>
+        <input type="number" placeholder="Ingresa el tiempo de uso" id="porTime" min="0">
+        <button type="button" id="btnPor"> calcular</button>
+    </div>
+    <div class="electrical">
+        <label class="C1">Total:</label>
+        <input type="text" id="totalPor" disabled>
+        <label class="C1">Total a pagar:</label>
+        <input type="text" id="totalPorPag" disabled>
+    </div>
+    <!-- aa -->
+    <h4 class="appliances">Plancha</h4>
+    <div class="electrical">
+        <label class="C1">Cantidad:</label>
+        <input type="number" placeholder="Ingresa la cantidad" id="plaCantidad" min="0">
+        <label class="C1">Consumo:</label>
+        <input type="number" placeholder="Ingresa el consumo" id="plaConsumo" min="0">
+        <label class="C1">Tiempo de uso:</label>
+        <input type="number" placeholder="Ingresa el tiempo de uso" id="plaTime" min="0">
+        <button type="button" id="btnPla"> calcular</button>
+    </div>
+    <div class="electrical">
+        <label class="C1">Total:</label>
+        <input type="text" id="totalPla" disabled>
+        <label class="C1">Total a pagar:</label>
+        <input type="text" id="totalPlaPag" disabled>
+    </div>
+    <!-- aa -->
+    <h4 class="appliances">Bombillo</h4>
+    <div class="electrical">
+        <label class="C1">Cantidad:</label>
+        <input type="number" placeholder="Ingresa la cantidad" id="bomCantidad" min="0">
+        <label class="C1">Consumo:</label>
+        <input type="number" placeholder="Ingresa el consumo" id="bomConsumo" min="0">
+        <label class="C1">Tiempo de uso:</label>
+        <input type="number" placeholder="Ingresa el tiempo de uso" id="bomTime" min="0">
+        <button type="button" id="btnBom"> calcular</button>
+    </div>
+    <div class="electrical">
+        <label class="C1">Total:</label>
+        <input type="text" id="totalBom" disabled>
+        <label class="C1">Total a pagar:</label>
+        <input type="text" id="totalBomPag" disabled>
+    </div>
+    <!-- aa -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Sobre Nosotros</h3>
+                <p>Somos una empresa comprometida con promover el uso responsable de la energía eléctrica. 
+                    Ofrecemos soluciones que te ayudan a optimizar el consumo, reducir costos y cuidar el 
+                    medio ambiente. ¡Únete a nosotros y haz un uso más eficiente de la energía!</p>
+            </div>
+            <div class="footer-section">
+                <h3>Enlaces Rápidos</h3>
+                <ul>
+                    <li><a href="#T1">¿Cúanto consumo?</a></li>
+                    <li><a href="#T2">Aparatos eléctricos</a></li>
+                    <li><a href="#T3">Calculemos tu consumo</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contactanos</h3>
+                <p>andresbenavides@ecopower.org</p>
+                <p>brandonmontilla@ecopower.org</p>
+                <p>julianmontoya@ecopower.org</p>
+                <p>leonardorodriguez@ecopower.org</p>
+                <p>Teléfono: +1 (123) 456-7890</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Tu Sitio Web. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+<script src="./main.js"></script>
+</html>

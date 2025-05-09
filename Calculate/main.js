@@ -116,9 +116,9 @@ btnCaf.addEventListener("click", () => {
     const numCafTime = Number(cafTime.value);
 
     const resultado = numCafCant * (numCafCons * (numCafTime * numConsumos));
-    totalTv.value = `${resultado.toFixed(2)} kWh`;
+    totalCaf.value = `${resultado.toFixed(2)} kWh`;
     const pagar = resultado * numPrecio;
-    totalTvPag.value = `${pagar.toFixed(2)} COP`;
+    totalCafPag.value = `${pagar.toFixed(2)} COP`;
 });
 
 btnMic.addEventListener("click", () => {
@@ -134,9 +134,9 @@ btnMic.addEventListener("click", () => {
     const numMicTime = Number(micTime.value);
 
     const resultado = numMicCant * (numMicCons * (numMicTime * numConsumos));
-    totalTv.value = `${resultado.toFixed(2)} kWh`;
+    totalMic.value = `${resultado.toFixed(2)} kWh`;
     const pagar = resultado * numPrecio;
-    totalTvPag.value = `${pagar.toFixed(2)} COP`;
+    totalMicPag.value = `${pagar.toFixed(2)} COP`;
 });
 
 btnLav.addEventListener("click", () => {
@@ -152,9 +152,9 @@ btnLav.addEventListener("click", () => {
     const numLavTime = Number(lavTime.value);
 
     const resultado = numLavCant * (numLavCons * (numLavTime * numConsumos));
-    totalTv.value = `${resultado.toFixed(2)} kWh`;
+    totalLav.value = `${resultado.toFixed(2)} kWh`;
     const pagar = resultado * numPrecio;
-    totalTvPag.value = `${pagar.toFixed(2)} COP`;
+    totalLavPag.value = `${pagar.toFixed(2)} COP`;
 });
 
 btnVen.addEventListener("click", () => {
@@ -170,9 +170,9 @@ btnVen.addEventListener("click", () => {
     const numVenTime = Number(venTime.value);
 
     const resultado = numVenCant * (numVenCons * (numVenTime * numConsumos));
-    totalTv.value = `${resultado.toFixed(2)} kWh`;
+    totalVen.value = `${resultado.toFixed(2)} kWh`;
     const pagar = resultado * numPrecio;
-    totalTvPag.value = `${pagar.toFixed(2)} COP`;
+    totalVenPag.value = `${pagar.toFixed(2)} COP`;
 });
 
 btnLic.addEventListener("click", () => {
@@ -188,9 +188,9 @@ btnLic.addEventListener("click", () => {
     const numLicTime = Number(licTime.value);
 
     const resultado = numLicCant * (numLicCons * (numLicTime * numConsumos));
-    totalTv.value = `${resultado.toFixed(2)} kWh`;
+    totalLic.value = `${resultado.toFixed(2)} kWh`;
     const pagar = resultado * numPrecio;
-    totalTvPag.value = `${pagar.toFixed(2)} COP`;
+    totalLicPag.value = `${pagar.toFixed(2)} COP`;
 });
 
 btnCar.addEventListener("click", () => {
@@ -206,9 +206,9 @@ btnCar.addEventListener("click", () => {
     const numCarTime = Number(carTime.value);
 
     const resultado = numCarCant * (numCarCons * (numCarTime * numConsumos));
-    totalTv.value = `${resultado.toFixed(2)} kWh`;
+    totalCar.value = `${resultado.toFixed(2)} kWh`;
     const pagar = resultado * numPrecio;
-    totalTvPag.value = `${pagar.toFixed(2)} COP`;
+    totalCarPag.value = `${pagar.toFixed(2)} COP`;
 });
 
 btnPor.addEventListener("click", () => {
@@ -224,9 +224,9 @@ btnPor.addEventListener("click", () => {
     const numPorTime = Number(porTime.value);
 
     const resultado = numPorCant * (numPorCons * (numPorTime * numConsumos));
-    totalTv.value = `${resultado.toFixed(2)} kWh`;
+    totalPor.value = `${resultado.toFixed(2)} kWh`;
     const pagar = resultado * numPrecio;
-    totalTvPag.value = `${pagar.toFixed(2)} COP`;
+    totalPorPag.value = `${pagar.toFixed(2)} COP`;
 });
 
 btnPla.addEventListener("click", () => {
@@ -242,9 +242,9 @@ btnPla.addEventListener("click", () => {
     const numPlaTime = Number(plaTime.value);
 
     const resultado = numPlaCant * (numPlaCons * (numPlaTime * numConsumos));
-    totalTv.value = `${resultado.toFixed(2)} kWh`;
+    totalPla.value = `${resultado.toFixed(2)} kWh`;
     const pagar = resultado * numPrecio;
-    totalTvPag.value = `${pagar.toFixed(2)} COP`;
+    totalPlaPag.value = `${pagar.toFixed(2)} COP`;
 });
 
 btnBom.addEventListener("click", () => {
@@ -260,7 +260,7 @@ btnBom.addEventListener("click", () => {
     const numBomTime = Number(bomTime.value);
 
     const resultado = numBomCant * (numBomCons * (numBomTime * numConsumos));
-    totalTv.value = `${resultado.toFixed(2)} kWh`;
+    totalBom.value = `${resultado.toFixed(2)} kWh`;
     const pagar = resultado * numPrecio;
-    totalTvPag.value = `${pagar.toFixed(2)} COP`;
+    totalBomPag.value = `${pagar.toFixed(2)} COP`;
 });

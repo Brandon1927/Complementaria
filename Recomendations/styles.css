@@ -1,0 +1,421 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: white;
+    z-index: 2;
+    overflow-x: hidden;
+}
+
+/* Header */
+
+header{
+    background-image: url("../img/header\ energía.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 70vh;
+    margin: 0;
+    background-attachment: fixed;
+    align-items: center;
+    text-align: center;
+}
+
+h1{
+    color: #FFD54F;
+    font-family: 'Jockey One', sans-serif;
+    font-size: 300%;
+    text-align: center;
+    text-shadow: 3px 3px 8px #FFD54F;
+    cursor: pointer;
+    position: relative;
+    top: 5%;
+}
+
+.all{
+    position: relative;
+    top: -5%;
+    display: grid;
+    grid-template-columns: repeat(5, 0.5fr);                  
+    padding: 6%;
+    left: 4%;
+}
+
+.Powers, .Energies, .Calculators, .Tips, .Relations{
+    background: #FFECB3;
+    width: 45%;
+    height: 200px;
+    position: relative;
+    top: 25%;
+    left: 5%;
+    border: none;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 4px	 4px #FFD54F;
+    cursor: pointer;
+}
+
+.Powers:hover, .Energies:hover, .Calculators:hover, .Tips:hover, .Relations:hover{
+    transform: scale(1.2);
+    box-shadow: 0px 0px 4px	 4px #FFD54F;
+}
+
+.Power1, .Energy, .Tip, .Relation{
+    position: relative;
+    top: 5%;
+    left: 10%;
+    width: 80%;
+    margin: 2%;
+}
+
+.Calculator{
+    position: relative;
+    top: 5%;
+    left: 17%;
+    width: 62%;
+    margin: 2%;
+}
+
+.btnPower, .btnEnergy, .btnCalculator, .btnTip, .btnRelation{
+    height: 48px;
+    width: 80%;
+    border: none;
+    border-radius: 20px;
+    position: relative;
+    top: 10%;
+    left: 10%;
+    font-family: 'Jockey One', sans-serif;
+    text-align: center;
+    font-size: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* Texto definicion */
+
+.Txt1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;              
+    gap: 10px;                  
+    padding: 6%;
+    align-items: center;
+}
+
+.T1{
+    margin-top: 5%;
+    color: black;
+    font-family: 'Jockey One', sans-serif;
+    font-size: 200%;
+    text-align: center;
+    text-shadow: 3px 3px 8px #FFD54F;
+}
+
+p{
+    color: black;
+    width: 90%;
+    position: relative;
+    left: 3%;
+    text-align: justify;
+    font-size: 120%;
+    font-family: 'Jockey One', sans-serif;
+    padding-bottom: 10px;
+}
+
+.formula{
+    text-align: center;
+    font-size: 150%;
+}
+
+.U1{
+    color: black;
+    width: 50%;
+    position: relative;
+    left: 3%;
+    text-align: justify;
+    font-size: 120%;
+    font-family: 'Jockey One', sans-serif;
+}
+
+.Txt12{
+    text-align: center;
+}
+
+.img1{
+    width: 100%;
+}
+
+/* Texto contexto */
+
+.Txt2{             
+    display: grid;
+    grid-template-columns: 1fr 1fr;              
+    gap: 10px;                  
+    padding: 6%;
+    align-items: center;
+}
+
+.T2, .T3, .T5{
+    color: black;
+    font-family: 'Jockey One', sans-serif;
+    font-size: 200%;
+    text-align: center;
+    text-shadow: 3px 3px 8px #FFD54F;
+}
+
+.Concepto{
+    color: black;
+    position: relative;
+    text-align: justify;
+    font-size: 120%;
+    font-family: 'Jockey One', sans-serif;
+    width: 90%;
+}
+
+.Txt21{
+    text-align: center;
+}
+
+.img2{
+    width: 70%;
+}
+
+/* Texto de tipos de potencia */
+
+.Txt3{             
+    display: grid;
+    grid-template-columns: 1fr 1fr;              
+    gap: 10px;                  
+    padding: 6%;
+    align-items: center;
+}
+
+.S3{
+    color: black;
+    font-family: 'Jockey One', sans-serif;
+    font-size: 150%;
+    text-align: center;
+    text-shadow: 3px 3px 8px #FFD54F;
+    padding-bottom: 5px;
+}
+
+.P3, .P4{
+    color: black;
+    width: 90%;
+    position: relative;
+    text-align: justify;
+    font-size: 120%;
+    font-family: 'Jockey One', sans-serif;
+    padding-bottom: 15px;
+}
+
+.Txt32{
+    text-align: center;
+}
+
+.img3{
+    width: 100%;
+}
+
+/* Texto de aplicaciones de potencia */
+
+.Pr4{
+    background-color: #FFD54F;
+}
+
+.T4{
+    color: black;
+    font-family: 'Jockey One', sans-serif;
+    font-size: 200%;
+    text-align: center;
+    text-shadow: 3px 3px 8px white;
+}
+
+.Txt4{             
+    display: grid;
+    grid-template-columns: 1fr 1fr;              
+    gap: 10px;                  
+    padding: 6%;
+    align-items: center;
+    text-align: center;
+}
+
+.S4{
+    color: black;
+    font-family: 'Jockey One', sans-serif;
+    font-size: 150%;
+    text-align: center;
+    text-shadow: 3px 3px 8px white;
+    padding-bottom: 5px;
+}
+
+.U4{
+    color: black;
+    width: 90%;
+    position: relative;
+    text-align: justify;
+    font-size: 120%;
+    font-family: 'Jockey One', sans-serif;
+    padding-bottom: 15px;
+}
+
+.P41, .P51{
+    color: black;
+    width: 90%;
+    position: relative;
+    text-align: justify;
+    font-size: 120%;
+    font-family: 'Jockey One', sans-serif;
+    padding-left: 4%;
+    padding-bottom: 15px;
+}
+
+.U41, .U51{
+    color: black;
+    width: 90%;
+    position: relative;
+    text-align: justify;
+    font-size: 120%;
+    font-family: 'Jockey One', sans-serif;
+    padding-bottom: 15px;
+    padding-left: 10%;
+}
+
+.img4{
+    width: 70%;
+}
+
+/* a */
+
+.T51{
+    color: black;
+    width: 90%;
+    position: relative;
+    text-align: justify;
+    text-shadow: 3px 3px 8px #FFD54F;
+    font-size: 150%;
+    font-family: 'Jockey One', sans-serif;
+    padding-left: 7%;
+    padding-bottom: 15px;
+}
+
+/* Estilo general para el footer */
+.footer {
+    background-color: #FFD54F;      /* Color de fondo oscuro */
+    color: black;                 /* Color de texto blanco */
+    padding: 40px 0;             /* Espaciado alrededor del footer */
+    text-align: center;          /* Centra el contenido */
+    font-family: 'Jockey One', sans-serif;
+    text-shadow: 3px 3px 8px white;
+}
+
+.footer-container {
+    display: grid;               /* Usamos grid para organizar el contenido */
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas de igual tamaño */
+    gap: 20px;                   /* Espaciado entre las columnas */
+    padding: 20px;
+}
+
+.footer-section h3 {
+    font-size: 18px;             /* Tamaño de fuente del título de cada sección */
+    margin-bottom: 10px;         /* Espacio debajo del título */
+    text-shadow: 3px 3px 8px white;
+}
+
+.footer-section p {
+    font-size: 14px;             /* Tamaño de fuente de los párrafos */
+    line-height: 1.5;            /* Espaciado entre líneas */
+    text-shadow: none;
+}
+
+.footer-section ul {
+    list-style-type: none;       /* Elimina los puntos de la lista */
+    padding: 0;                  /* Elimina el padding */
+}
+
+.footer-section ul li {
+    margin: 5px 0;               /* Espaciado entre los elementos de la lista */
+}
+
+.footer-section ul li a {
+    color: black;              /* Color de los enlaces */
+    text-decoration: none;       /* Elimina el subrayado */
+    transition: color 0.3s ease; /* Transición suave para los enlaces */
+    text-shadow: none;
+}
+
+.footer-section ul li a:hover {
+    color: white;              /* Color al pasar el ratón por encima */
+}
+
+/* Estilo para el pie de página */
+.footer-bottom {
+    background-color: #ebbb1d;      /* Fondo ligeramente más oscuro */
+    padding: 20px;               /* Espaciado alrededor */
+    font-size: 14px;             /* Tamaño de fuente */
+}
+
+.footer-bottom p {
+    margin: 0;                   /* Elimina el margen */
+}
+
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    padding: 1rem;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  
+    background-color: rgba(0,0,0,0.85);
+  
+  }
+  
+  .lightbox-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    max-width: 90vw;
+    max-height: 80vh;
+    transform: translate(-50%, -50%);
+    border-radius: 12px;
+    object-fit: contain;
+  }
+  
+  .lightbox-close {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  
+  
+  /* Contenedor del lightbox ya usa flex para centrar la imagen */
+  .lightbox.active {
+    display: block;
+  }
+  
+  .lightbox-prev:hover,
+  .lightbox-next:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  
+  .lightbox-prev {
+    left: 1rem;
+  }
+  
+  .lightbox-next {
+    right: 1rem;
+  }
+
+

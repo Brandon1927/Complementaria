@@ -41,7 +41,11 @@ h1{
 .Powers, .Energies, .Calculators, .Tips, .Relations{
     background: #FFECB3;
     width: 65%;
+<<<<<<< HEAD
     height: 250px;
+=======
+    height: 120%;
+>>>>>>> 475d59872e4b37f07042139cbef767376139d942
     position: relative;
     top: 25%;
     left: 5%;
@@ -141,7 +145,7 @@ a{
     .Powers, .Energies, .Calculators, .Tips, .Relations{
         background: #FFECB3;
         width: 55%;
-        height: 400px;
+        /* height: 400px; */
         position: relative;
         top: 25%;
         left: 5%;

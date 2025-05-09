@@ -64,6 +64,9 @@ let bomTime = document.getElementById("bomTime");
 let btnBom = document.getElementById("btnBom");
 let totalBom = document.getElementById("totalBom");
 let totalBomPag = document.getElementById("totalBomPag");
+let btnRes = document.getElementById("btnRes");
+let totalRes = document.getElementById("totalRes");
+let totalResPag = document.getElementById("totalResPag");
 let consumos = document.getElementById("consumos");
 let precio = document.getElementById("precio");
 
@@ -263,4 +266,45 @@ btnBom.addEventListener("click", () => {
     totalBom.value = `${resultado.toFixed(2)} kWh`;
     const pagar = resultado * numPrecio;
     totalBomPag.value = `${pagar.toFixed(2)} COP`;
+<<<<<<< HEAD
+=======
+});
+
+btnRes.addEventListener("click", () => {
+    const numPrecio = Number(precio.value);
+    const numBom = parseFloat(totalBom.value) || 0;
+    const numCaf = parseFloat(totalCaf.value) || 0;
+    const numCar = parseFloat(totalCar.value) || 0;
+    const numLav = parseFloat(totalLav.value) || 0;
+    const numLic = parseFloat(totalLic.value) || 0;
+    const numMic = parseFloat(totalMic.value) || 0;
+    const numNev = parseFloat(totalNev.value) || 0;
+    const numPla = parseFloat(totalPla.value) || 0;
+    const numPor = parseFloat(totalPor.value) || 0;
+    const numTv  = parseFloat(totalTv.value)  || 0;
+    const numVen = parseFloat(totalVen.value) || 0;
+
+    const numBomPag = parseFloat(totalBomPag.value) || 0;
+    const numCafPag = parseFloat(totalCafPag.value) || 0;
+    const numCarPag = parseFloat(totalCarPag.value) || 0;
+    const numLavPag = parseFloat(totalLavPag.value) || 0;
+    const numLicPag = parseFloat(totalLicPag.value) || 0;
+    const numMicPag = parseFloat(totalMicPag.value) || 0;
+    const numNevPag = parseFloat(totalNevPag.value) || 0;
+    const numPlaPag = parseFloat(totalPlaPag.value) || 0;
+    const numPorPag = parseFloat(totalPorPag.value) || 0;
+    const numTvPag  = parseFloat(totalTvPag.value)  || 0;
+    const numVenPag = parseFloat(totalVenPag.value) || 0;
+
+    const resultado =   numBom + numCaf + numCar +
+                        numLav + numLic + numMic +
+                        numNev + numPla + numPor +
+                        numTv + numVen;
+    totalRes.value = `${resultado.toFixed(2)} kWh`;
+    const pagar =       numBomPag + numCafPag + numCarPag +
+                        numLavPag + numLicPag + numMicPag +
+                        numNevPag + numPlaPag + numPorPag +
+                        numTvPag + numVenPag;
+    totalResPag.value = `${pagar.toFixed(2)} COP`;
+>>>>>>> 475d59872e4b37f07042139cbef767376139d942
 });

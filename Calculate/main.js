@@ -266,12 +266,10 @@ btnBom.addEventListener("click", () => {
     totalBom.value = `${resultado.toFixed(2)} kWh`;
     const pagar = resultado * numPrecio;
     totalBomPag.value = `${pagar.toFixed(2)} COP`;
-<<<<<<< HEAD
-=======
+
 });
 
 btnRes.addEventListener("click", () => {
-    const numPrecio = Number(precio.value);
     const numBom = parseFloat(totalBom.value) || 0;
     const numCaf = parseFloat(totalCaf.value) || 0;
     const numCar = parseFloat(totalCar.value) || 0;
@@ -306,5 +304,4 @@ btnRes.addEventListener("click", () => {
                         numNevPag + numPlaPag + numPorPag +
                         numTvPag + numVenPag;
     totalResPag.value = `${pagar.toFixed(2)} COP`;
->>>>>>> 475d59872e4b37f07042139cbef767376139d942
 });

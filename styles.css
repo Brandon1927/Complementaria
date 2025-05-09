@@ -41,7 +41,7 @@ h1{
 .Powers, .Energies, .Calculators, .Tips, .Relations{
     background: #FFECB3;
     width: 65%;
-    height: 230px;
+    height: 120%;
     position: relative;
     top: 25%;
     left: 5%;
@@ -141,7 +141,7 @@ a{
     .Powers, .Energies, .Calculators, .Tips, .Relations{
         background: #FFECB3;
         width: 55%;
-        height: 400px;
+        /* height: 400px; */
         position: relative;
         top: 25%;
         left: 5%;

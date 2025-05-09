@@ -67,7 +67,7 @@
         </div>
     </div>
     <!-- aa -->
-    <h4 class="T3" id="T2">Aparatos eléctricos</h4>
+    <h4 class="T3" id="T2">Electrodomésticos y dispositivos eléctricos</h4>
     <div class="Txt2">
         <div class="Txt21">
             <img class="img2" src="../img/aparatos.jpg" alt="png">
@@ -83,7 +83,7 @@
                 <li>Ventilador: 75 W</li>
                 <li>Licuadora: 500 W</li>
                 <li>Cargadores (portatil, celular): 10 W</li>
-                <li>Portatil: 300 W</li>
+                <li>Computador de mesa: 300 W</li>
                 <li>Plancha: 1800 W</li>
                 <li>Bombillo: 6 W</li>
             </ol>
@@ -108,7 +108,8 @@
     </h4>
     <h4>
     <label class="C0" for="precio">Elige el estrato socioeconómico del lugar de tu residencia:</label>
-    <select id="precio" name="precio">
+    <select id="precio" name="precio">        
+        <option value="233.47">1</option>
         <option value="476">2</option>
         <option value="737.6">3</option>
         <option value="867.8">4</option>
@@ -121,14 +122,14 @@
     <div class="electrical">
         <label class="C1">Cantidad:</label>
         <input type="number" placeholder="Ingresa la cantidad" id="nevCantidad" min="0">
-        <label class="C1">Consumo:</label>
+        <label class="C1">Potencia:</label>
         <input type="number" placeholder="Ingresa el consumo" id="nevConsumo" min="0">
-        <label class="C1">Tiempo de uso:</label>
+        <label class="C1">Tiempo de uso (diario):</label>
         <input type="number" placeholder="Ingresa el tiempo de uso" id="nevTime" min="0">
         <button type="button" id="btnNev"> calcular</button>
     </div>
     <div class="electrical">
-        <label class="C1">Total:</label>
+        <label class="C1">Total consumo:</label>
         <input type="text" id="totalNev" disabled>
         <label class="C1">Total a pagar:</label>
         <input type="text" id="totalNevPag" disabled>
@@ -138,14 +139,14 @@
     <div class="electrical">
         <label class="C1">Cantidad:</label>
         <input type="number" placeholder="Ingresa la cantidad" id="tvCantidad" min="0">
-        <label class="C1">Consumo:</label>
+        <label class="C1">Potencia:</label>
         <input type="number" placeholder="Ingresa el consumo" id="tvConsumo" min="0">
-        <label class="C1">Tiempo de uso:</label>
+        <label class="C1">Tiempo de uso (diario):</label>
         <input type="number" placeholder="Ingresa el tiempo de uso" id="tvTime" min="0">
         <button type="button" id="btnTv"> calcular</button>
     </div>
     <div class="electrical">
-        <label class="C1">Total:</label>
+        <label class="C1">Total consumo:</label>
         <input type="text" id="totalTv" disabled>
         <label class="C1">Total a pagar:</label>
         <input type="text" id="totalTvPag" disabled>
@@ -155,14 +156,14 @@
     <div class="electrical">
         <label class="C1">Cantidad:</label>
         <input type="number" placeholder="Ingresa la cantidad" id="cafCantidad" min="0">
-        <label class="C1">Consumo:</label>
+        <label class="C1">Potencia:</label>
         <input type="number" placeholder="Ingresa el consumo" id="cafConsumo" min="0">
-        <label class="C1">Tiempo de uso:</label>
+        <label class="C1">Tiempo de uso (diario):</label>
         <input type="number" placeholder="Ingresa el tiempo de uso" id="cafTime" min="0">
         <button type="button" id="btnCaf"> calcular</button>
     </div>
     <div class="electrical">
-        <label class="C1">Total:</label>
+        <label class="C1">Total consumo:</label>
         <input type="text" id="totalCaf" disabled>
         <label class="C1">Total a pagar:</label>
         <input type="text" id="totalCafPag" disabled>
@@ -172,14 +173,14 @@
     <div class="electrical">
         <label class="C1">Cantidad:</label>
         <input type="number" placeholder="Ingresa la cantidad" id="micCantidad" min="0">
-        <label class="C1">Consumo:</label>
+        <label class="C1">Potencia:</label>
         <input type="number" placeholder="Ingresa el consumo" id="micConsumo" min="0">
-        <label class="C1">Tiempo de uso:</label>
+        <label class="C1">Tiempo de uso (diario):</label>
         <input type="number" placeholder="Ingresa el tiempo de uso" id="micTime" min="0">
         <button type="button" id="btnMic"> calcular</button>
     </div>
     <div class="electrical">
-        <label class="C1">Total:</label>
+        <label class="C1">Total consumo:</label>
         <input type="text" id="totalMic" disabled>
         <label class="C1">Total a pagar:</label>
         <input type="text" id="totalMicPag" disabled>
@@ -189,14 +190,14 @@
     <div class="electrical">
         <label class="C1">Cantidad:</label>
         <input type="number" placeholder="Ingresa la cantidad" id="lavCantidad" min="0">
-        <label class="C1">Consumo:</label>
+        <label class="C1">Potencia:</label>
         <input type="number" placeholder="Ingresa el consumo" id="lavConsumo" min="0">
-        <label class="C1">Tiempo de uso:</label>
+        <label class="C1">Tiempo de uso (diario):</label>
         <input type="number" placeholder="Ingresa el tiempo de uso" id="lavTime" min="0">
         <button type="button" id="btnLav"> calcular</button>
     </div>
     <div class="electrical">
-        <label class="C1">Total:</label>
+        <label class="C1">Total consumo:</label>
         <input type="text" id="totalLav" disabled>
         <label class="C1">Total a pagar:</label>
         <input type="text" id="totalLavPag" disabled>
@@ -206,14 +207,14 @@
     <div class="electrical">
         <label class="C1">Cantidad:</label>
         <input type="number" placeholder="Ingresa la cantidad" id="venCantidad" min="0">
-        <label class="C1">Consumo:</label>
+        <label class="C1">Potencia:</label>
         <input type="number" placeholder="Ingresa el consumo" id="venConsumo" min="0">
-        <label class="C1">Tiempo de uso:</label>
+        <label class="C1">Tiempo de uso (diario):</label>
         <input type="number" placeholder="Ingresa el tiempo de uso" id="venTime" min="0">
         <button type="button" id="btnVen"> calcular</button>
     </div>
     <div class="electrical">
-        <label class="C1">Total:</label>
+        <label class="C1">Total consumo:</label>
         <input type="text" id="totalVen" disabled>
         <label class="C1">Total a pagar:</label>
         <input type="text" id="totalVenPag" disabled>
@@ -223,14 +224,14 @@
     <div class="electrical">
         <label class="C1">Cantidad:</label>
         <input type="number" placeholder="Ingresa la cantidad" id="licCantidad" min="0">
-        <label class="C1">Consumo:</label>
+        <label class="C1">Potencia:</label>
         <input type="number" placeholder="Ingresa el consumo" id="licConsumo" min="0">
-        <label class="C1">Tiempo de uso:</label>
+        <label class="C1">Tiempo de uso (diario):</label>
         <input type="number" placeholder="Ingresa el tiempo de uso" id="licTime" min="0">
         <button type="button" id="btnLic"> calcular</button>
     </div>
     <div class="electrical">
-        <label class="C1">Total:</label>
+        <label class="C1">Total consumo:</label>
         <input type="text" id="totalLic" disabled>
         <label class="C1">Total a pagar:</label>
         <input type="text" id="totalLicPag" disabled>
@@ -240,31 +241,31 @@
     <div class="electrical">
         <label class="C1">Cantidad:</label>
         <input type="number" placeholder="Ingresa la cantidad" id="carCantidad" min="0">
-        <label class="C1">Consumo:</label>
+        <label class="C1">Potencia:</label>
         <input type="number" placeholder="Ingresa el consumo" id="carConsumo" min="0">
-        <label class="C1">Tiempo de uso:</label>
+        <label class="C1">Tiempo de uso (diario):</label>
         <input type="number" placeholder="Ingresa el tiempo de uso" id="carTime" min="0">
         <button type="button" id="btnCar"> calcular</button>
     </div>
     <div class="electrical">
-        <label class="C1">Total:</label>
+        <label class="C1">Total consumo:</label>
         <input type="text" id="totalCar" disabled>
         <label class="C1">Total a pagar:</label>
         <input type="text" id="totalCarPag" disabled>
     </div>
     <!-- aa -->
-    <h4 class="appliances">Portatil</h4>
+    <h4 class="appliances">Computador de mesa</h4>
     <div class="electrical">
         <label class="C1">Cantidad:</label>
         <input type="number" placeholder="Ingresa la cantidad" id="porCantidad" min="0">
-        <label class="C1">Consumo:</label>
+        <label class="C1">Potencia:</label>
         <input type="number" placeholder="Ingresa el consumo" id="porConsumo" min="0">
-        <label class="C1">Tiempo de uso:</label>
+        <label class="C1">Tiempo de uso (diario):</label>
         <input type="number" placeholder="Ingresa el tiempo de uso" id="porTime" min="0">
         <button type="button" id="btnPor"> calcular</button>
     </div>
     <div class="electrical">
-        <label class="C1">Total:</label>
+        <label class="C1">Total consumo:</label>
         <input type="text" id="totalPor" disabled>
         <label class="C1">Total a pagar:</label>
         <input type="text" id="totalPorPag" disabled>
@@ -276,12 +277,12 @@
         <input type="number" placeholder="Ingresa la cantidad" id="plaCantidad" min="0">
         <label class="C1">Consumo:</label>
         <input type="number" placeholder="Ingresa el consumo" id="plaConsumo" min="0">
-        <label class="C1">Tiempo de uso:</label>
+        <label class="C1">Tiempo de uso (diario):</label>
         <input type="number" placeholder="Ingresa el tiempo de uso" id="plaTime" min="0">
         <button type="button" id="btnPla"> calcular</button>
     </div>
     <div class="electrical">
-        <label class="C1">Total:</label>
+        <label class="C1">Total consumo:</label>
         <input type="text" id="totalPla" disabled>
         <label class="C1">Total a pagar:</label>
         <input type="text" id="totalPlaPag" disabled>
@@ -293,15 +294,23 @@
         <input type="number" placeholder="Ingresa la cantidad" id="bomCantidad" min="0">
         <label class="C1">Consumo:</label>
         <input type="number" placeholder="Ingresa el consumo" id="bomConsumo" min="0">
-        <label class="C1">Tiempo de uso:</label>
+        <label class="C1">Tiempo de uso (diario):</label>
         <input type="number" placeholder="Ingresa el tiempo de uso" id="bomTime" min="0">
         <button type="button" id="btnBom"> calcular</button>
     </div>
     <div class="electrical">
-        <label class="C1">Total:</label>
+        <label class="C1">Total consumo:</label>
         <input type="text" id="totalBom" disabled>
         <label class="C1">Total a pagar:</label>
         <input type="text" id="totalBomPag" disabled>
+    </div>
+    <h4 class="appliances">Resultados totales</h4>
+    <div class="electrical">
+        <button type="button" id="btnRes"> calcular</button>
+        <label class="C1">Total consumo:</label>
+        <input type="text" id="totalRes" disabled>
+        <label class="C1">Total a pagar:</label>
+        <input type="text" id="totalResPag" disabled>
     </div>
     <!-- aa -->
     <footer class="footer">
@@ -316,7 +325,7 @@
                 <h3>Enlaces Rápidos</h3>
                 <ul>
                     <li><a href="#T1">¿Cúanto consumo?</a></li>
-                    <li><a href="#T2">Aparatos eléctricos</a></li>
+                    <li><a href="#T2">Electrodomésticos y dispositivos eléctricos</a></li>
                     <li><a href="#T3">Calculemos tu consumo</a></li>
                 </ul>
             </div>

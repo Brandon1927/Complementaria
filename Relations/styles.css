@@ -12,7 +12,7 @@ body{
 /* Header */
 
 header{
-    background-image: url("../img/header\ energía.jpg");
+    background-image: url("../img/Power.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -43,7 +43,23 @@ h1{
     left: 4%;
 }
 
-.Powers, .Energies, .Calculators, .Tips, .Relations{
+.Relations{
+    background: #c4b58a;
+    width: 45%;
+    height: 200px;
+    position: relative;
+    top: 25%;
+    left: 5%;
+    border: none;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 4px	 4px #aa8f35;
+    cursor: pointer;
+    transition: all 0.1s ease;
+}
+
+.Energies, .Calculators, .Tips, .Powers{
     background: #FFECB3;
     width: 45%;
     height: 200px;
@@ -56,9 +72,10 @@ h1{
     flex-direction: column;
     box-shadow: 0px 0px 4px	 4px #FFD54F;
     cursor: pointer;
+    transition: all 0.1s ease;
 }
 
-.Powers:hover, .Energies:hover, .Calculators:hover, .Tips:hover, .Relations:hover{
+.Energies:hover, .Calculators:hover, .Tips:hover, .Powers:hover{
     transform: scale(1.2);
     box-shadow: 0px 0px 4px	 4px #FFD54F;
 }
@@ -90,6 +107,10 @@ h1{
     font-family: 'Jockey One', sans-serif;
     text-align: center;
     font-size: 100%;
+}
+
+h3{
+    color: black;
 }
 
 a{
@@ -145,8 +166,12 @@ p{
     text-align: center;
 }
 
-.img1{
-    width: 100%;
+video{
+    border-radius: 20px;
+}
+
+img{
+    border-radius: 20px;
 }
 
 /* Texto contexto */
@@ -159,7 +184,7 @@ p{
     align-items: center;
 }
 
-.T2, .T3, .T5{
+.T2, .T3{
     color: black;
     font-family: 'Jockey One', sans-serif;
     font-size: 200%;
@@ -181,7 +206,7 @@ p{
 }
 
 .img2{
-    width: 70%;
+    width: 40%;
 }
 
 /* Texto de tipos de potencia */
@@ -274,22 +299,31 @@ p{
     padding-bottom: 15px;
 }
 
-.U41, .U51{
+.U41, .U51, h3{
     color: black;
     width: 90%;
     position: relative;
     text-align: justify;
     font-size: 120%;
     font-family: 'Jockey One', sans-serif;
-    padding-bottom: 15px;
-    padding-left: 10%;
+    padding-bottom: 5px;
+    padding-left: 7%;
 }
 
 .img4{
-    width: 70%;
+    width: 53%;
 }
 
 /* a */
+
+.T5{
+    color: black;
+    font-family: 'Jockey One', sans-serif;
+    font-size: 200%;
+    text-align: center;
+    text-shadow: 3px 3px 8px #FFD54F;
+    padding-top: 20px;
+}
 
 .T51{
     color: black;
@@ -301,6 +335,51 @@ p{
     font-family: 'Jockey One', sans-serif;
     padding-left: 7%;
     padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+.U51{
+    color: black;
+    width: 90%;
+    position: relative;
+    text-align: justify;
+    font-size: 120%;
+    font-family: 'Jockey One', sans-serif;
+    padding-bottom: 15px;
+    padding-left: 10%;
+}
+
+.C1{
+    color: black;
+    width: 90%;
+    position: relative;
+    text-align: center;
+    font-size: 120%;
+    font-family: 'Jockey One', sans-serif;
+    padding-left: 7%;               
+}
+
+button{
+    color: black;
+    background-color: #FFD54F;
+    font-size: 100%;
+    font-family: 'Jockey One', sans-serif;
+    border-radius: 8px;
+    border: 100%;
+    border-color: black;
+    cursor: pointer;
+    transition: all 0.1s ease;
+}
+
+button:hover{
+    background-color: #dbb843;
+    cursor: pointer;
+}
+
+button:active{
+    background-color: #dbb843;
+    transform: scale(0.95);
+    box-shadow: 0 4px 6px #bb9d39;
 }
 
 /* Estilo general para el footer */

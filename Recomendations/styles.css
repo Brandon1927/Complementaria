@@ -12,11 +12,11 @@ body{
 /* Header */
 
 header{
-    background-image: url("../img/header\ energía.jpg");
+    background-image: url("../img/Ahorrosostenible.jpeg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 70vh;
+    height: 80vh;
     margin: 0;
     background-attachment: fixed;
     align-items: center;
@@ -24,7 +24,7 @@ header{
 }
 
 h1{
-    color: #FFD54F;
+    color: #000000;
     font-family: 'Jockey One', sans-serif;
     font-size: 300%;
     text-align: center;
@@ -94,6 +94,7 @@ h1{
 
 a{
     text-decoration: none;
+    color: black;
 }
 
 /* Texto definicion */
@@ -115,7 +116,7 @@ a{
     text-shadow: 3px 3px 8px #FFD54F;
 }
 
-p{
+p, ol{
     color: black;
     width: 90%;
     position: relative;
@@ -224,7 +225,7 @@ p{
 /* Texto de aplicaciones de potencia */
 
 .Pr4{
-    background-color: #FFD54F;
+    background-color: #72a4b1;
 }
 
 .T4{
@@ -305,7 +306,7 @@ p{
 
 /* Estilo general para el footer */
 .footer {
-    background-color: #FFD54F;      /* Color de fondo oscuro */
+    background-color: #ffffff;      /* Color de fondo oscuro */
     color: black;                 /* Color de texto blanco */
     padding: 40px 0;             /* Espaciado alrededor del footer */
     text-align: center;          /* Centra el contenido */
@@ -419,3 +420,6 @@ p{
   }
 
 
+video{
+    border-radius: 20px;
+}
